@@ -92,7 +92,7 @@ label[for=main-menu-check] > svg {
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
 
 label[for=main-menu-check] {
     display: block;
