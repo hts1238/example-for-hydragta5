@@ -1,0 +1,92 @@
+body > input[type=checkbox] {
+    display: none;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, #0000, #558a, #0000);
+    margin: 24px 0 16px;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 10vh auto 10vh;
+    gap: 20px;
+    background-color: #eef;
+    font-family: sans-serif;
+}
+
+header {
+    grid-column-end: span 2;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+    box-shadow: 0 0 30px #00f5;
+}
+
+h1.title {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+menu {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+
+menu > a {
+    line-height: 1.5em;
+    margin: 10px 0;
+    font-size: 1.3em;
+}
+
+main {
+
+}
+
+div.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    justify-content: space-between;
+    gap: 20px;
+}
+
+div.card {
+    justify-self: stretch;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #00f3;
+    overflow: hidden;
+}
+
+div.card img {
+    width: 200px;
+}
+
+.card-title {
+    margin: 10px;
+    font-size: 1.4em;
+}
+
+footer {
+    grid-column-end: span 2;
+    background-color: #ccc;
+}
+
+label[for=main-menu-check] {
+    display: none;
+}
+
+label[for=main-menu-check] > svg {
+    width: 32px;
+    height: 32px;
+}
