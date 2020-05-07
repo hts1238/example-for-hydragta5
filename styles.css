@@ -90,3 +90,43 @@ label[for=main-menu-check] > svg {
     width: 32px;
     height: 32px;
 }
+
+
+@media screen and (max-width: 900px) {
+
+label[for=main-menu-check] {
+    display: block;
+}
+
+menu {
+    display: none;
+}
+
+main {
+    grid-column-end: span 2;
+}
+
+input#main-menu-check:checked ~ * {
+    display: none;
+}
+
+input#main-menu-check:checked ~ menu {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    margin: 0;
+}
+
+input#main-menu-check:checked ~ menu > label {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    font-size: 30px;
+}
+
+}
